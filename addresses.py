@@ -24,6 +24,8 @@ def getPlaces():
 
         return students
 
+### Google OR-Tools attempt ###
+# https://developers.google.com/optimization/routing/tsp
 def create_data_model(places):
     """Stores the data for the problem."""
     data = {}
@@ -34,7 +36,7 @@ def create_data_model(places):
     data['distance_matrix'] = distance_matrix.tolist()
     data['num_vehicles'] = 1
     data['depot'] = 0
-    return data + 1
+    return data
 
 
 def d(p1, p2):
@@ -57,7 +59,7 @@ routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
 search_parameters = pywrapcp.DefaultRoutingSearchParameters()
 search_parameters.local_search_metaheuristic = (
     routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH)
-search_parameters.time_limit.seconds = 30
+search_parameters.time_limit.seconds = 10  # Change run time
 search_parameters.log_search = True
 
 def print_solution(manager, routing, solution):
@@ -78,6 +80,12 @@ def print_solution(manager, routing, solution):
 solution = routing.SolveWithParameters(search_parameters)
 if solution:
     print_solution(manager, routing, solution)
+
+# We get a score of 1422km (0.70323)
+# Issue is, the teacher returns from node 13 to node 0 at the end, which the problem doesn't require.
+# This distance (64,04594km) can be subtracted from our solution, giving a solution of 1358 (0.74)
+# Clearly, the starting point is wrong. TODO find out how to find the optimal starting point
+
 
 # places = getPlaces()
 # distance_matrix = np.empty((30, 30))
