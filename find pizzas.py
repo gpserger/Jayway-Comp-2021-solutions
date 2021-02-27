@@ -10,7 +10,7 @@ class Pizza:
 
 
 def getPizzas():
-    with open('pizzas.json') as json_file:
+    with open('lesspizzas.json') as json_file:
         data = json.load(json_file)
 
         pizzas = list()
