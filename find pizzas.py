@@ -62,6 +62,34 @@ pizzas = getPizzas()
 checkout = []  # the list of pizzas we are going to buy
 subtotal = 0  # the cost of those pizzas
 
+#If a pizza has at least all the same ingredients as another pizza and is either cheaper or the same price, remove it.
+i = 0
+for pizza in pizzas:
+    i+=1
+    if i%100==0:
+        print("Checked {} pizzas".format(i))
+    for pizza2 in pizzas:
+        if pizza != pizza2:
+            if pizza2.price >= pizza.price:
+                if set(pizza2.ingredients).issubset(pizza.ingredients):
+                    pizzas.remove(pizza2)
+                    break
+            elif pizza.price >= pizza2.price:
+                if set(pizza.ingredients).issubset(pizza2.ingredients):
+                    pizzas.remove(pizza)
+                    break
+# From 10000 pizzas to 7241 pizzas.
+# Write this to new file:
+data = []
+for pizza in pizzas:
+    data.append({
+        'name': pizza.name,
+        'price': pizza.price,
+        'ingredients': pizza.ingredients
+    })
+
+with open('lesspizzas.json', 'w') as outfile:
+    json.dump(data, outfile)
 
 # Highest possible score: 65/65 as other teams have this score
 # First we try
@@ -101,40 +129,42 @@ subtotal = 0  # the cost of those pizzas
 # Next we try
 
 # Backtracking? Maybe we still use the price sorted list and we just add and backtrack pizzas until we have all 65
-pizzas = sorted(pizzas, key=pricePerIngredient)
+#pizzas = sorted(pizzas, key=pricePerIngredient)
 
 # Pointers points to a pizza index, the hypothetical checkout is just the combination of the pizzas at the pointers
-pointers = []
-pointers.append(0)  # starting pointer, we add the first pizza
-done = False
-while not done:
-    i = 0
-    for pointer in pointers:
-        subtotal += pizzas[pointer].price
-        if subtotal < 1000:
-            # We can afford to buy more pizzas, so add another pointer at the next pizza in the line.
-            pointers.append(max(pointers) + 1)
-        elif len(uniqueIngredients(checkout)) == 65 and subtotal <= 1000:
-            # We found our checkout, we are done
-            done = True
-            break
-        else:
-            # we've run out of money, time to move some pointers around
-            pointers[i] += 1
-        i += 1
-
-# sort pizzas by price
-# add pointers until we can't afford any more
+# pointers = []
+# pointers.append(0)  # starting pointer, we add the first pizza
+# done = False
+# while not done:
+#     i = 0
+#     for pointer in pointers:
+#         subtotal += pizzas[pointer].price
+#         if subtotal < 1000:
+#             # We can afford to buy more pizzas, so add another pointer at the next pizza in the line.
+#             pointers.append(max(pointers) + 1)
+#         elif len(uniqueIngredients(checkout)) == 65 and subtotal <= 1000:
+#             # We found our checkout, we are done
+#             done = True
+#             break
+#         else:
+#             # we've run out of money, time to move some pointers around
+#             pointers[i] += 1
+#         i += 1
+#
+# # sort pizzas by price
+# # add pointers until we can't afford any more
 #
 
-print(subtotal)
-print(len(uniqueIngredients(checkout)))
-print(checkout)
-string = ""
-for pizza in checkout:
-    string += pizza.name + ", "
-
-print(string)
+# print(subtotal)
+# print(len(uniqueIngredients(checkout)))
+# print(checkout)
+# string = ""
+# for pizza in checkout:
+#     string += pizza.name + ", "
+#
+# print(string)
+#
+# for*
 
 
 
