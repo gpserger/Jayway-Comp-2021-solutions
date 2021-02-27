@@ -61,6 +61,15 @@ def uniqueIngredients(pizzas):
 pizzas = getPizzas()
 checkout = []  # the list of pizzas we are going to buy
 subtotal = 0  # the cost of those pizzas
+ingredients = dict()
+for pizza in pizzas:
+    for ingredient in pizza.ingredients:
+        if ingredient not in ingredients:
+            ingredients[ingredient] = 1
+        else:
+            ingredients[ingredient] += 1
+
+print(ingredients)
 
 #If a pizza has at least all the same ingredients as another pizza and is either cheaper or the same price, remove it.
 i = 0
