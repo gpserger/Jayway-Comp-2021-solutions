@@ -81,6 +81,7 @@ class Profile:
             return 0
         tot = 0
         for pref in self.preferences:
+            ## Crappy spaghetti code to check for the special case where one or both people have animal: "Cat and dog"
             if "Cat and dog" in self.qualities[pref]:
                 if "Cat" in profile.preferences[pref] or "None" in profile.preferences[pref] or "dog" in profile.preferences[pref] or "Cat and dog" in profile.preferences[pref]:
                     if "Cat and dog" in profile.qualities[pref]:
@@ -98,15 +99,7 @@ class Profile:
                     elif self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
                         tot += 1
 
-
-                # profilequalities = profile.qualities[pref]
-                # selfqualities = self.qualities[pref]
-                # if not isinstance(self.qualities[pref], list):
-                #     selfqualities = [self.qualities[pref]]
-                # if not isinstance(profile.qualities[pref], list):
-                #     profilequalities = [profile.qualities[pref]]
-                # if any(item in selfqualities for item in profile.preferences[pref]) and any(item in profilequalities for item in self.preferences[pref]):
-                #     tot += 1
+            # Normal case
             elif profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
                 if self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
                     tot += 1
@@ -156,6 +149,9 @@ class Profile:
             pref.append(range(self.age + 10, self.age + 16))
         if "Ancient" in agePreferences:
             pref.append(range(self.age + 15, 1000))
+
+        if len(pref) == 0:
+            print("NOT GOOD")
         return pref
 
     def combineDict(self, dictlist):
@@ -198,11 +194,13 @@ profiles = getProfiles()
 
 
 
-
+scoredist = {}
+for i in range(0,6):
+    scoredist[i/5] = 0
 matchlist = []
 total = 0
 total_sum = 0
-for user in profiles:
+for user in profiles[:4]:
 
     if user.index % 100 == 0:
         print("User: {}".format(user.index))
@@ -214,18 +212,20 @@ for user in profiles:
     bestmatchindex = -1
     for profile in profiles:
         if user.validMatch(profile):
-            score = user.matchScore(profile)
-            if score >= highscore:
-                highscore = score
-                bestmatchindex = profile.index
-            if score == 1:
-                break
-
+            a = 0
+        score = user.matchScore(profile)
+        if score > highscore:
+            highscore = score
+            bestmatchindex = profile.index
+        if score == 1:
+            break
 
     if(bestmatchindex != -1):
+
         total_sum += highscore
         matchlist.append("({}:{}),".format(user.index, bestmatchindex))
         total += 1
+        scoredist[highscore] += 1
         if (highscore <= 0.4):
             print("Low score: {} for user {}".format(highscore, user.index))
     # else:
@@ -233,7 +233,7 @@ for user in profiles:
 
 print(total)
 print(total_sum)
-
+print(scoredist)
 
 
 
@@ -249,9 +249,9 @@ print()
 # # (0:481),(1:4233),(2:2005),(3.... was entered to the website and we scored 1631
 # # --- 5.687190771102905 seconds ---
 
-print(profiles[635].matchScore(profiles[9932]))  # Should be 1 points
-print(profiles[636].matchScore(profiles[9809]))  # Should be 0.8 points
-print(profiles[637].matchScore(profiles[731]))  # Should be 1 points
+print(profiles[3].matchScore(profiles[571]))  # Should be 0.2 points
+# print(profiles[636].matchScore(profiles[9809]))  # Should be 0.8 points
+# print(profiles[637].matchScore(profiles[731]))  # Should be 1 points
 # print(profiles[0].matchScore(profiles[54]))  # Should be 0.4 points
 # print(profiles[713].matchScore(profiles[1]))  # Should be 0 points
 # print(profiles[2].matchScore(profiles[559]))  # Should be 0.4 points
