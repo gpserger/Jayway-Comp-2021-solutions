@@ -94,7 +94,7 @@ def find_solve(start, end):
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
     search_parameters.local_search_metaheuristic = (
         routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH)
-    search_parameters.time_limit.seconds = 2  # Change run time
+    search_parameters.time_limit.seconds = 1  # Change run time
     search_parameters.log_search = True
 
     solution = routing.SolveWithParameters(search_parameters)
@@ -103,12 +103,22 @@ def find_solve(start, end):
         return solution.ObjectiveValue()
 
 shortest_path = 10000
-for start in range(len(getPlaces())):
-    for end in range(len(getPlaces())):
+places = getPlaces()
+import sys
+import os
+old_stderr = sys.stderr # backup current stdout
+sys.stderr = open(os.devnull, "w")
+for start in range(len(places)):
+    for end in range(len(places)):
         if start != end:
-            path = find_solve(start, end)
-            if shortest_path > path:
-                shortest_path = path
+            if places[start].x < -25 or places[start].x > 25:
+                if places[end].x < -25 or places[end].x > 25:
+                    print("Start {}, end {}".format(start, end))
+                    path = find_solve(start, end)
+                    if shortest_path > path:
+                        shortest_path = path
+sys.stderr = old_stderr # reset old stdout
+
 
 print(shortest_path)
 # We get a score of 1422km (0.70323)
