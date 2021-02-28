@@ -1,0 +1,2002 @@
+[
+    {
+        "name": "Ervin Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Frank Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Agnes Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Hector Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Sherry Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Ronald Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Shelley Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Todd Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ebony Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Jason Larsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Debbie Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Christie Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Antoinette Karlsson DVM",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Sherman Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ollie Eriksson MD",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Gladys Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Everett Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Derek Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Laurence Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ebony Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Priscilla Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dawn Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Jesse Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ruben Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Harold Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Caleb Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Evan Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Brad Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Prof. Ian Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Joshua Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Misty Nilsson IV",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Sylvia Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Latoya Gustafsson V",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Christie Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Yvonne Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Eloise Karlsson II",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Wallace Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Mildred Johansson Sr.",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Stephanie Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lewis Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Lora Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Victor Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Henry Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Courtney Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Nellie Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Derek Eriksson I",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Pablo Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Dallas Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Fredrick Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Robert Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dr. Melissa Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Dr. Darren Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ross Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Rex Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Scott Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Kristine Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ruben Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Prof. Charlotte Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dr. Helen Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "PhD. Leona Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lucille Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Lucille Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "PhD. Allison Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Jody Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Wendell Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Kurt Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Raymond Andersson V",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Rufus Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Joanna Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Charlotte Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Robin Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Monique Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Francis Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Tiffany Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Brittany Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Melvin Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Gilbert Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Johnny Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Emily Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Cecelia Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Inez Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Carolyn Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Lorenzo Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Stacy Larsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Rickey Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Marcia Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Neal Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Julius Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Kristopher Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Ramon Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Adam Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Sean Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Vicki Karlsson MD",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ignacio Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dr. Guadalupe Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Reginald Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Susan Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lynn Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Myron Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Clara Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Mindy Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Wanda Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Sheila Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Irene Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Prof. Vickie Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dr. Chester Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Damon Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Hugo Eriksson DDS",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Angelo Eriksson V",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Susie Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "David Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Elizabeth Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Jonathan Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Angelica Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Susan Andersson I",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Gilbert Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Sylvester Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "PhD. Adrienne Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Shirley Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Vickie Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Winston Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Terrell Gustafsson III",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Tabitha Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dave Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Traci Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Marc Gustafsson DDS",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Georgia Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "John Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Jeannette Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Jackie Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ora Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Hope Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Nathan Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Sarah Andersson MD",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Gail Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Candice Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Tracy Andersson Jr.",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Janice Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Domingo Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Jennie Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Milton Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Christie Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Geraldine Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Oliver Andersson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Isabel Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "PhD. Hubert Larsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Lance Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lawrence Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Beulah Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Elaine Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Prof. Linda Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Fernando Larsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Joey Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Ian Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "PhD. Iris Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Albert Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Gerardo Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lyle Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Mary Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Marjorie Eriksson MD",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Dr. Shawn Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Julie Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Damon Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ollie Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Alexandra Larsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Luz Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Lauren Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Estelle Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Carolyn Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Gilberto Eriksson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Garry Johansson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Stella Svensson IV",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Dr. Louis Karlsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Theodore Olsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Melanie Nilsson Jr.",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Mike Larsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Alvin Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Bonnie Johansson DDS",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Henry Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Terence Andersson MD",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Antoinette Svensson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Marc Olsson I",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Sherri Olsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Jason Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Ruth Olsson II",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Gene Larsson III",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Felipe Gustafsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Henry Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Delia Karlsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Clifton Svensson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Wendell Nilsson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Terence Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Christie Nilsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Tina Eriksson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Debra Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Steve Andersson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Prof. Bradford Persson",
+        "preferences": {
+            "regular": false,
+            "chocolate": false,
+            "vegan": false,
+            "glutenFree": false,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Julio Gustafsson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": true,
+            "glutenFree": true,
+            "wrap": true
+        }
+    },
+    {
+        "name": "Louis Johansson",
+        "preferences": {
+            "regular": false,
+            "chocolate": true,
+            "vegan": false,
+            "glutenFree": true,
+            "wrap": false
+        }
+    },
+    {
+        "name": "Stacy Persson",
+        "preferences": {
+            "regular": true,
+            "chocolate": false,
+            "vegan": true,
+            "glutenFree": false,
+            "wrap": false
+        }
+    }
+]
