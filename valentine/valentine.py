@@ -79,20 +79,13 @@ class Profile:
         # Scoring wrong on (1:713), (0:54) and probably more.
         if not self.validMatch(profile):
             return 0
-        tot1 = 0
+        tot = 0
         for pref in self.preferences:
-            if "None" in self.preferences[pref] or profile.qualities[pref] == "None":
-                tot1 += 1
-            elif profile.qualities[pref] in self.preferences[pref]:
-                tot1 += 1
-        tot2 = 0
-        for pref in profile.preferences:
-            if "None" in profile.preferences[pref] or self.qualities[pref] == "None":
-                tot2 += 1
-            elif self.qualities[pref] in profile.preferences[pref]:
-                tot2 += 1
-        tot = tot1 + tot2
-        return tot2/5
+            if profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
+                if self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
+                    tot += 1
+
+        return tot/5
 
     def likesAge(self, age):
         if not self.agePreferences:
@@ -167,20 +160,35 @@ profiles = getProfiles()
 # # --- 130.44158387184143 seconds ---
 
 # # Now lets figure out how many users have potential 1.0 matches
-# matchlist = []
-# total = 0
-# for user in profiles:
-#     for profile in profiles:
-#         if user.validMatch(profile):
-#             score = user.matchScore(profile)
-#             if score == 1:
-#                 total += 1
-#                 matchlist.append("({}:{}),".format(user.index, profile.index))
-#                 break
-# print(total)
-# # Output:
-# # 9247
-# # --- 10.60509467124939 seconds ---
+matchlist = []
+total = 0
+total_sum = 0
+for user in profiles:
+    if user.index % 100 == 0:
+        print("User: {}".format(user.index))
+    highscore = 0
+    bestmatchindex = -1
+    for profile in profiles:
+        if user.validMatch(profile):
+            score = user.matchScore(profile)
+            if score >= highscore:
+                highscore = score
+                bestmatchindex = profile.index
+            if score == 1:
+                total += 1
+                break
+    if(bestmatchindex != -1):
+        total_sum += highscore
+        matchlist.append("({}:{}),".format(user.index, bestmatchindex))
+    else:
+        print(user.index)
+
+print(total)
+print(total_sum)
+# Output:
+# 9247
+# --- 10.60509467124939 seconds ---
+#
 # for match in matchlist:
 #     print(match, end="")
 # print()
@@ -188,5 +196,29 @@ profiles = getProfiles()
 # # (0:481),(1:4233),(2:2005),(3.... was entered to the website and we scored 1631
 # # --- 5.687190771102905 seconds ---
 
-print(profiles[54].matchScore(profiles[0]))
+# print(profiles[54].matchScore(profiles[0]))  # Should be 0.4 points
+# print(profiles[0].matchScore(profiles[54]))  # Should be 0.4 points
+# print(profiles[713].matchScore(profiles[1]))  # Should be 0 points
+# print(profiles[2].matchScore(profiles[559]))  # Should be 0.4 points
+# print(profiles[4].matchScore(profiles[193]))  # Should be 0.8 points
+# print(profiles[5].matchScore(profiles[60]))  # Should be 0.8 points
+# (6:224) # 0.2
+# (11:292) # 1
+
+# All matches seem to be symmetrical: (A:B) gives same score as (B:A)
 print("--- %s seconds ---" % (time.time() - start_time))
+
+
+arlene = {"index": 1, "name": "PhD. Arlene Karlsson", "age": 54, "gender": "Female", "lookingfor": "Female",
+     "agePreferences": ["Younger"],
+     "qualities": [{"eyecolor": "Red"}, {"financialStatus": "Middle Class"}, {"height": "Tall"}, {"occupation": "None"},
+                   {"animals": "Cat"}],
+     "preferences": [{"eyecolor": ["Brown"]}, {"financialStatus": ["Very poor"]}, {"height": ["Short"]},
+                     {"occupation": ["Military", "Party animal"]}, {"animals": ["Spider", "Cat", "Snakes"]}]}
+
+tyrone = {"index": 713, "name": "Tyrone Gustafsson Jr.", "age": 48, "gender": "Female", "lookingfor": "Female",
+          "agePreferences": ["Much Older", "Older", "Younger"],
+          "qualities": [{"eyecolor": "Blue"}, {"financialStatus": "Rich"}, {"height": "Standard"}, {"occupation": "IT"},
+                        {"animals": "Rats"}],
+          "preferences": [{"eyecolor": ["Black", "Red"]}, {"financialStatus": ["Very poor", "Poor", "Middle Class"]},
+                          {"height": ["Short", "Tall"]}, {"occupation": ["None"]}, {"animals": ["None"]}]}
