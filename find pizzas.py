@@ -1,4 +1,5 @@
 import json
+import time
 
 
 class Pizza:
@@ -45,51 +46,64 @@ def pricePerUniqueIngredient(ingredients, pizza):
 
 
 def pricePerIngredient(pizza):
-    return pricePerUniqueIngredient((),pizza)
+    return pricePerUniqueIngredient((), pizza)
 
 
 def uniqueIngredients(pizzas):
     tot = set()
+    if pizzas:
+        if(isinstance(pizzas, list)):
+            for pizza in pizzas:
+                for ingredient in pizza.ingredients:
+                    tot.add(ingredient)
+        else:
+            for ingredient in pizzas.ingredients:
+                tot.add(ingredient)
+    return tot
+
+
+def pizzaListPrice(pizzas):
+    tot = 0
     for pizza in pizzas:
-        for ingredient in pizza.ingredients:
-            tot.add(ingredient)
+        tot += pizza.price
 
     return tot
 
 
 ### START HERE ###
+
 pizzas = getPizzas()
 checkout = []  # the list of pizzas we are going to buy
 subtotal = 0  # the cost of those pizzas
 
-#If a pizza has at least all the same ingredients as another pizza and is either cheaper or the same price, remove it.
-i = 0
-for pizza in pizzas:
-    i+=1
-    if i%100==0:
-        print("Checked {} pizzas".format(i))
-    for pizza2 in pizzas:
-        if pizza != pizza2:
-            if pizza2.price >= pizza.price:
-                if set(pizza2.ingredients).issubset(pizza.ingredients):
-                    pizzas.remove(pizza2)
-                    break
-            elif pizza.price >= pizza2.price:
-                if set(pizza.ingredients).issubset(pizza2.ingredients):
-                    pizzas.remove(pizza)
-                    break
-# From 10000 pizzas to 7241 pizzas.
-# Write this to new file:
-data = []
-for pizza in pizzas:
-    data.append({
-        'name': pizza.name,
-        'price': pizza.price,
-        'ingredients': pizza.ingredients
-    })
-
-with open('lesspizzas.json', 'w') as outfile:
-    json.dump(data, outfile)
+# If a pizza has at least all the same ingredients as another pizza and is either cheaper or the same price, remove it.
+# i = 0
+# for pizza in pizzas:
+#     i+=1
+#     if i%100==0:
+#         print("Checked {} pizzas".format(i))
+#     for pizza2 in pizzas:
+#         if pizza != pizza2:
+#             if pizza2.price >= pizza.price:
+#                 if set(pizza2.ingredients).issubset(pizza.ingredients):
+#                     pizzas.remove(pizza2)
+#                     break
+#             elif pizza.price >= pizza2.price:
+#                 if set(pizza.ingredients).issubset(pizza2.ingredients):
+#                     pizzas.remove(pizza)
+#                     break
+# # From 10000 pizzas to 7241 pizzas.
+# # Write this to new file:
+# data = []
+# for pizza in pizzas:
+#     data.append({
+#         'name': pizza.name,
+#         'price': pizza.price,
+#         'ingredients': pizza.ingredients
+#     })
+#
+# with open('lesspizzas.json', 'w') as outfile:
+#     json.dump(data, outfile)
 
 # Highest possible score: 65/65 as other teams have this score
 # First we try
@@ -129,7 +143,7 @@ with open('lesspizzas.json', 'w') as outfile:
 # Next we try
 
 # Backtracking? Maybe we still use the price sorted list and we just add and backtrack pizzas until we have all 65
-#pizzas = sorted(pizzas, key=pricePerIngredient)
+# pizzas = sorted(pizzas, key=pricePerIngredient)
 
 # Pointers points to a pizza index, the hypothetical checkout is just the combination of the pizzas at the pointers
 # pointers = []
@@ -155,6 +169,76 @@ with open('lesspizzas.json', 'w') as outfile:
 # # add pointers until we can't afford any more
 #
 
+# Backtracking
+# pizzas = sorted(pizzas, key=pricePerIngredient)
+# for pizza in pizzas:
+#     subtotal = pizza.price
+#     # Sort list according to the pizza we're starting the combination with
+#     # pizzas2 = sorted(pizzas, key=lambda pizza: pricePerUniqueIngredient(uniqueIngredients(checkout), pizza))
+#     pizzas2 = sorted(pizzas, key=lambda p: p.price)
+#     pizzas2.remove(pizza)
+#     pointers = [0]
+#     for pointer in pointers:
+#         subtotal += pizzas2[pointer]
+#
+#     if subtotal > 1000:
+#         pointers.pop()
+#         pointers[-1] += 1
+
+start_time = time.time()
+
+def recursive_backtracking(pizzas, checkout, printout=0):
+    """
+
+    :param pizzas: List of pizzas, sorted by price
+    :param checkout: list of pizzas we are planning to buy in this path
+    :return: checkout, or false if this is a dead end
+    """
+
+    if len(pizzas) == 0:
+        print("Found dead end: list empty")
+        return False
+    for i in range(1, len(pizzas)):
+        if pizzaListPrice(checkout) + pizzas[i].price > 1000:
+            # Can't afford this, or any of the other pizzas in the list
+            #print("Found dead end: price too high")
+            return False
+        if len(uniqueIngredients(checkout + [pizzas[i]])) >= 65:
+            checkout.append(pizzas[i])
+            print("Level {} - Kollat {}: {}".format(printout, i, pizzas[i]))
+            return checkout
+        else:
+            checkout.append(pizzas[i])
+            ret = recursive_backtracking(pizzas[i+1:], checkout, printout-1)
+            if ret:
+                return ret
+        checkout.pop()
+        if printout > 0:
+            print("Level {} - Kollat {}: {}".format(printout, i, pizzas[i]))
+            print("--- %s seconds ---" % (time.time() - start_time))
+
+    return False
+
+
+
+pizzas = sorted(pizzas, key=lambda p: p.price)
+
+for pizza in pizzas:
+    if len(pizza.ingredients) < 10:
+        pizzas.remove(pizza)
+
+print(len(pizzas))
+
+outputlist = recursive_backtracking(pizzas, [], 17)
+
+print(pizzaListPrice(outputlist))
+print(len(uniqueIngredients(outputlist)))
+for p in outputlist:
+    print("{},".format(p.name), end="")
+
+
+
+
 # print(subtotal)
 # print(len(uniqueIngredients(checkout)))
 # print(checkout)
@@ -165,10 +249,3 @@ with open('lesspizzas.json', 'w') as outfile:
 # print(string)
 #
 # for*
-
-
-
-
-
-
-
