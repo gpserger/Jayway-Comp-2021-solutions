@@ -83,11 +83,19 @@ class Profile:
         for pref in self.preferences:
             if "Cat and dog" in self.qualities[pref]:
                 if "Cat" in profile.preferences[pref] or "None" in profile.preferences[pref] or "dog" in profile.preferences[pref] or "Cat and dog" in profile.preferences[pref]:
-                    if profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
+                    if "Cat and dog" in profile.qualities[pref]:
+                        if "Cat" in self.preferences[pref] or "None" in self.preferences[pref] or "dog" in \
+                                self.preferences[pref] or "Cat and dog" in self.preferences[pref]:
+                            tot += 1
+                    elif profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
                         tot += 1
             elif "Cat and dog" in profile.qualities[pref]:
                 if "Cat" in self.preferences[pref] or "None" in self.preferences[pref] or "dog" in self.preferences[pref] or "Cat and dog" in self.preferences[pref]:
-                    if self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
+                    if "Cat and dog" in self.qualities[pref]:
+                        if "Cat" in profile.preferences[pref] or "None" in profile.preferences[pref] or "dog" in \
+                                profile.preferences[pref] or "Cat and dog" in profile.preferences[pref]:
+                            tot += 1
+                    elif self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
                         tot += 1
 
 
@@ -241,9 +249,9 @@ print()
 # # (0:481),(1:4233),(2:2005),(3.... was entered to the website and we scored 1631
 # # --- 5.687190771102905 seconds ---
 
-print(profiles[22].matchScore(profiles[292]))  # Should be 1 points
-print(profiles[23].matchScore(profiles[6483]))  # Should be 1 points
-print(profiles[24].matchScore(profiles[9924]))  # Should be 1 points
+print(profiles[635].matchScore(profiles[9932]))  # Should be 1 points
+print(profiles[636].matchScore(profiles[9809]))  # Should be 0.8 points
+print(profiles[637].matchScore(profiles[731]))  # Should be 1 points
 # print(profiles[0].matchScore(profiles[54]))  # Should be 0.4 points
 # print(profiles[713].matchScore(profiles[1]))  # Should be 0 points
 # print(profiles[2].matchScore(profiles[559]))  # Should be 0.4 points
