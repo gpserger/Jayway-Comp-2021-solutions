@@ -81,7 +81,25 @@ class Profile:
             return 0
         tot = 0
         for pref in self.preferences:
-            if profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
+            if "Cat and dog" in self.qualities[pref]:
+                if "Cat" in profile.preferences[pref] or "None" in profile.preferences[pref] or "dog" in profile.preferences[pref] or "Cat and dog" in profile.preferences[pref]:
+                    if profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
+                        tot += 1
+            elif "Cat and dog" in profile.qualities[pref]:
+                if "Cat" in self.preferences[pref] or "None" in self.preferences[pref] or "dog" in self.preferences[pref] or "Cat and dog" in self.preferences[pref]:
+                    if self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
+                        tot += 1
+
+
+                # profilequalities = profile.qualities[pref]
+                # selfqualities = self.qualities[pref]
+                # if not isinstance(self.qualities[pref], list):
+                #     selfqualities = [self.qualities[pref]]
+                # if not isinstance(profile.qualities[pref], list):
+                #     profilequalities = [profile.qualities[pref]]
+                # if any(item in selfqualities for item in profile.preferences[pref]) and any(item in profilequalities for item in self.preferences[pref]):
+                #     tot += 1
+            elif profile.qualities[pref] in self.preferences[pref] or "None" in self.preferences[pref]:
                 if self.qualities[pref] in profile.preferences[pref] or "None" in profile.preferences[pref]:
                     tot += 1
 
@@ -130,7 +148,6 @@ class Profile:
             pref.append(range(self.age + 10, self.age + 16))
         if "Ancient" in agePreferences:
             pref.append(range(self.age + 15, 1000))
-
         return pref
 
     def combineDict(self, dictlist):
@@ -139,6 +156,15 @@ class Profile:
             retdict.update(pref)
 
         return retdict
+
+    def andseparator(self, input):
+        if "and" in input["animals"]:
+            str = input["animals"]
+            input["animals"] = [str]
+            input["animals"] += str.split(" and ")
+
+        return input
+
 
 start_time = time.time()
 
@@ -160,12 +186,22 @@ profiles = getProfiles()
 # # --- 130.44158387184143 seconds ---
 
 # # Now lets figure out how many users have potential 1.0 matches
+# print(profiles[173].matchScore(profiles[9834]))  # Should be 1 points
+
+
+
+
 matchlist = []
 total = 0
 total_sum = 0
 for user in profiles:
+
     if user.index % 100 == 0:
         print("User: {}".format(user.index))
+
+    # if user.agePreferences is not None:
+    #     if len(user.agePreferences) == 0:
+    #         continue
     highscore = 0
     bestmatchindex = -1
     for profile in profiles:
@@ -175,28 +211,39 @@ for user in profiles:
                 highscore = score
                 bestmatchindex = profile.index
             if score == 1:
-                total += 1
                 break
+
+
     if(bestmatchindex != -1):
         total_sum += highscore
         matchlist.append("({}:{}),".format(user.index, bestmatchindex))
-    else:
-        print(user.index)
+        total += 1
+        if (highscore <= 0.4):
+            print("Low score: {} for user {}".format(highscore, user.index))
+    # else:
+    #     print("No match for {}".format(user.index))
 
 print(total)
 print(total_sum)
-# Output:
+
+
+
+
+
+#Output:
 # 9247
 # --- 10.60509467124939 seconds ---
 #
-# for match in matchlist:
-#     print(match, end="")
-# print()
-# # Output:
+for match in matchlist:
+    print(match, end="")
+print()
+#Output:
 # # (0:481),(1:4233),(2:2005),(3.... was entered to the website and we scored 1631
 # # --- 5.687190771102905 seconds ---
 
-# print(profiles[54].matchScore(profiles[0]))  # Should be 0.4 points
+print(profiles[22].matchScore(profiles[292]))  # Should be 1 points
+print(profiles[23].matchScore(profiles[6483]))  # Should be 1 points
+print(profiles[24].matchScore(profiles[9924]))  # Should be 1 points
 # print(profiles[0].matchScore(profiles[54]))  # Should be 0.4 points
 # print(profiles[713].matchScore(profiles[1]))  # Should be 0 points
 # print(profiles[2].matchScore(profiles[559]))  # Should be 0.4 points
